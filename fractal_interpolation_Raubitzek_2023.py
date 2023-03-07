@@ -61,6 +61,7 @@ plt.scatter(data_x, data, label="original data", color="black")
 plt.plot(frac_int_x, frac_int, label="fractal interpolation", color="orange")
 plt.xlabel(x_label)
 plt.ylabel(y_label)
+plt.legend(bbox_to_anchor=(0.05, 0.95), loc='upper left', borderaxespad=0.)
 plt.tight_layout()
 plt.savefig('./plot_frac_int_' + data_name + str(n_intp) +'nintp_' + str(sub_pieces) + 'subpieces.png')  #save png
 plt.savefig('./plot_frac_int_' + data_name + str(n_intp) +'nintp_' + str(sub_pieces) + 'subpieces.eps')  #save eps, use always eps for journals
